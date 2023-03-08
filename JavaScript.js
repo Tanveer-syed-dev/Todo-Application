@@ -45,7 +45,6 @@ let randomBgColorIndex = Math.ceil(Math.random() * numberOfBgColors);
 if (randomBgColorIndex === numberOfBgColors) {
     randomBgColorIndex = numberOfBgColors - 1;
     console.log(randomBgColorIndex);
-    
     }
 
 //creating localStorage when user save the task
@@ -213,6 +212,9 @@ select.addEventListener('change',backgrounds);
         //console.log(choice)
         if (choice === 'food'){
             backgroundContainerEl.style.backgroundImage="url('https://res.cloudinary.com/daxinnvsa/image/upload/v1672302527/1278235_g4yuqj.jpg')"
+            
+            backgroundContainerEl.style.height="100vh"
+            backgroundContainerEl.style.overflow="hidden"
             //console.log(choice === 'food')
         }
         else if (choice === 'grocery'){

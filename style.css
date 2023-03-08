@@ -149,7 +149,7 @@ option{
 .delete-icon {
     padding: 15px;
 }
-
+/* when item is .checked then line-throgh(strike mark) on the list */
 .checked {
     text-decoration: line-through;
     color: red;
